@@ -1,0 +1,86 @@
+body {
+    background: #eee;
+}
+
+h1 {
+    font-size: 20px;
+    padding: 20px;
+    background: #3dfaaa;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+}
+.main-p {
+    color: slateblue;
+    font-size: 2em;
+/*    font-weight: 500;*/
+}
+/* ####### #### Styling the link #######*/
+a:link {
+   color:aqua; 
+}
+a:visited {
+    color:bisque;
+}
+a:hover {
+    color: blueviolet;
+}
+a:active {    
+    color:aliceblue;
+    
+}
+
+/* Form section */
+
+form > div > label {
+/*  using the deselector tool */
+    padding: 10px;
+    background: #fff;
+}
+
+/* input attributes */
+input[placeholder]{
+    padding: 6px;
+    background: #3dfaaa;
+    color:#fff;
+}
+input[type="submit"], button {
+    background: #3dfaaa;
+    padding: 6px;
+    color:aliceblue;
+    border-radius: 20px;
+}
+/* Container section */
+div.container:first-of-type{
+    padding: 100px;
+    background: #3dfaaa;
+    width: 350px;
+    height: auto;
+}
+
+.footer {
+    background: #333;
+    overflow: hidden;
+    padding: 100px;
+}
+.footer p {
+    font-size: 1.2em;
+    color:#fff;
+    text-align: center;
+}
+.stick {
+    position: fixed;
+    /* Fixes the bar on scroll    */
+    top:0;
+    width: 100%;
+    opacity: 0.5;
+    
+}
+.stick + .belowPage {
+    padding-top: 60px;
+}
+div.belowPage {
+    background: url('https://besthqwallpapers.com/Uploads/16-12-2017/33550/thumb2-4k-mountains-river-forest-purple-landscape.jpg');
+    height: 200vh;
+    /* Added below content to test sticky bar    */
+}

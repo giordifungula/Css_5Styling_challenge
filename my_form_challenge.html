@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styling the Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <h1>Creating my Own Form</h1>
+
+    <p class="main-p">Welcome to my Form Page</p>
+
+    <a href="http://www.example.com">This is a hyperlink</a>
+
+    <form action="">
+    
+     <div>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="text" placeholder="yourname@yourdomain.com">
+      </div>
+
+       <button type="submit">Subscribe Now</button>
+    </form>
+
+    <div class="container"><!-- I am empty --></div>
+    <div class="container">I am not empty</div>
+
+    <div class="footer" id="myBar">
+        <p>This website uses cookies to ensure you get the best experience on our website.
+        </p>
+    </div>
+    
+    <div class="belowPage">
+    <!-- Below Page will be here       -->
+    
+    </div>
+    
+    </body>
+    
+    <!--javacript code below    -->
+    <script>
+    window.onscroll = function() {myScroll()};
+        
+    var myContent = document.getElementById('myBar');
+    
+    var stick = myContent.offsetTop;
+//        this will cahnge the position
+        function myScroll() {
+            if(window.pageYOffset >= stick) {
+                myContent.classList.add('stick')
+            } else {
+                myContent.classList.remove('stick')
+            }
+        }
+        
+    
+    </script>
+</html>
